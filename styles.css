@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Navbar */
+.navbar {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px; 
+    background-color: #f8f9fa;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logoName {
+    color: #1a1a1a;
+    font-size: inherit;
+}
+
+.navbar-brand {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px; 
+    font-weight: 900;
+}
+
+.navbar-toggler {
+    all: unset;
+    cursor: pointer; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.navbar-toggler-icon{
+    filter: brightness(0) invert(0);
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #333; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; 
+}
+
+.navbar-nav .nav-link.active {
+    color: #0056b3; 
+}
+
+.vertical-divider {
+    width: 1px; 
+    height: 50px; 
+    background-color: #ccc; 
+    margin: 0 15px; 
+    align-self: center;
+}
+
+@media (max-width: 991px) {
+    .vertical-divider {
+        width: 100%;
+        height: 2px;
+        margin: 10px auto; 
+    }
+}
+
+#darkModeToggle{
+    color: #000000;
+    all: unset;
+    text-align: center;
+    width: 90px;
+}
+
+/* Main Section */
+.main {
+    background-color: #e4e4e4;
+    color: #000000;
+}
+
+/* Strength Section */
+.strength{
+    background-color: #eaeaea;
+    color: #000000;
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1; 
+    color: #000000;
+}
+
+.footer a {
+    color: #000000;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
+
+.social_media {
+    color: #000000;
+    transition: color 0.3s;
+}
+
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+}
+
+.navbar.dark-mode {
+    background-color: #1a1a1a; /* Dark navbar background */
+    color: #ffffff;
+}
+
+.logoName.dark-mode {
+    color: #f8f9fa;
+    font-size: inherit;
+}
+
+.navbar-toggler-icon.dark-mode{
+    filter: brightness(1) invert(1);
+}
+
+.navbar.dark-mode .nav-link {
+    color: #dcdcdc; /* Light gray for links */
+}
+
+.navbar.dark-mode .nav-link:hover {
+    color: #66a6e7; /* Brighter hover color */
+}
+
+.navbar.dark-mode .nav-link.active {
+    color: #1e90ff; /* Active link color */
+}
+
+#darkModeToggle.dark-mode{
+    color: #ffffff;
+    all: unset;
+    text-align: center;
+    width: 90px;
+}
+
+.main.dark-mode {
+    background-color: #282828; /* Dark main section */
+    color: #ffffff;
+}
+
+/* Dark Strength Section */
+.strength.dark-mode{
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.footer.dark-mode {
+    background-color: #080808; /* Dark footer background */
+    color: #ffffff;
+}
+
+.footer.dark-mode a {
+    color: #dcdcdc; /* Light links in dark mode */
+}
+
+.footer.dark-mode a:hover {
+    color: #1e90ff; /* Hover link color in dark mode */
+}
+
+.social_media.dark-mode {
+    color: #ffffff; /* White social media links in dark mode */
+}
+
+/* Smooth Transition */
+body, .navbar, .footer, .social_media {
+    transition: background-color 0.3s, color 0.3s;
+}
+
